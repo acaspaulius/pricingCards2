@@ -1,0 +1,81 @@
+/* Mobile first */
+
+.cards {
+  margin: 0 2em;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.pricing__card {
+  padding: 0 2em;
+  background-color: var(--white-color);
+}
+
+.pricing__card_header h4 {
+  margin: 1.5em auto 0.75em;
+}
+
+.pricing__card_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pricing__card_price {
+  margin-top: 0.5em;
+  background-color: var(--price-background);
+  border-radius: 3em;
+  width: 9em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.price-per {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.5em;
+  align-items: flex-start;
+}
+
+.pricing__card_header .description {
+  margin: 1em auto;
+  line-height: 1.2em;
+}
+
+.btn {
+  margin-bottom: 0.3em;
+}
+
+.pricing__card_utilities {
+  margin: 2em auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Tablet */
+
+@media screen and (min-width: 768px) {
+  .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+
+  .pricing__card {
+    width: calc(50% - 5px);
+  }
+}
+
+/*  Desktop */
+
+@media screen and (min-width: 1024px) {
+  .pricing__card {
+    width: calc((100% / 4) - 5px);
+  }
+}

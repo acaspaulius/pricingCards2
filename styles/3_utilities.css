@@ -1,0 +1,107 @@
+/* Layout */
+.container {
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.pricing__card {
+  max-width: 300px;
+}
+
+@media screen and (min-width: 680px) {
+  .container {
+    max-width: 680px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1300px;
+  }
+}
+
+/* Components */
+
+/* -- button */
+
+button {
+  width: 11em;
+}
+
+.btn {
+  border: 1px solid var(--button-color);
+  border-radius: 0.3em;
+  padding: 0.7em 1.2em;
+  font-size: 0.9em;
+  cursor: pointer;
+  outline: none;
+  transition: all 150ms ease-in;
+}
+
+.btn-primary {
+  background-color: var(--white-color);
+  color: var(--button-color);
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2.5rem rgba(22, 28, 45, 0.1), 0 0.5rem 1rem -0.75rem rgba(22, 28, 45, 0.1);
+}
+
+.btn-primary:hover {
+  background-color: var(--button-light-color);
+  color: var(--white-color);
+  border: 1px solid var(--button-light-color);
+}
+
+/* -- headline */
+
+.headline-2,
+.headline-4 {
+  color: var(--primary-text-color);
+}
+
+.headline-2 {
+  font-size: 2em;
+}
+
+.headline-4 {
+  font-size: 1.2em;
+}
+
+/* -- paragraph */
+
+.description {
+  font-size: 0.9em;
+}
+
+.text-1 {
+  color: var(--primary-text-color);
+}
+
+.text-2 {
+  color: var(--secondary-text-color);
+}
+
+.small-text {
+  font-size: 0.75em;
+}
+.small-price {
+  font-size: 0.5em;
+}
+.bold-text {
+  font-weight: 800;
+}
+
+/* -- unordered list */
+
+ul {
+  padding-top: 0.4em;
+  list-style: none;
+  width: 11em;
+}
+
+ul li {
+  padding-top: 0.7em;
+  font-size: 0.9em;
+}
